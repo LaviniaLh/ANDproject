@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lavinia.project.MainActivity">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="270dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:src="@drawable/welcome"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/create"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:text="Create account"
+        android:layout_gravity="center"
+        android:onClick="createAccount"
+        android:layout_marginBottom="13dp" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:text="Log in"
+        android:onClick="login"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_marginTop="10dp"
+        android:layout_width="190dp"
+        android:layout_height="100dp"
+        android:src="@drawable/img"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center" />
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tool_bar"
+    android:background="@color/background"
+    tools:context="com.example.lavinia.project.NewActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbar"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:fontFamily="casual"
+        android:id="@+id/details"
+        android:text="Details"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/confirmZone"
+        android:textStyle="italic"
+        android:textSize="20dp"
+        android:fontFamily="casual"
+        android:layout_height="wrap_content"
+        android:text="Zone:"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/details"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirmSpot"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:fontFamily="casual"
+        android:text="Spot no.:"
+        android:layout_below="@+id/confirmZone"
+        android:gravity="center"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirmTime"
+        android:textStyle="italic"
+        android:fontFamily="casual"
+        android:text="Start time:"
+        android:layout_below="@+id/confirmSpot"
+        android:gravity="center"
+        android:layout_marginTop="5dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:fontFamily="casual"
+        android:text="Price per hour: 60kr"
+        android:textSize="20dp"
+        android:layout_below="@+id/confirmTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:id="@+id/pricePerHour" />
+
+    <Button
+        android:id="@+id/confirmDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pricePerHour"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:text="Confirm"
+        android:onClick="confirmDetails"
+        android:layout_alignLeft="@+id/pricePerHour"
+        android:layout_alignStart="@+id/pricePerHour"
+        android:layout_alignRight="@+id/pricePerHour"
+        android:layout_alignEnd="@+id/pricePerHour" />
+</RelativeLayout>
+    </ScrollView>

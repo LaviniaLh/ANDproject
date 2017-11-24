@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tool_bar"
+        android:background="@color/background"
+        tools:context="com.example.lavinia.project.NewActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/toolbar"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            android:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+        <LinearLayout
+            android:id="@+id/actOne"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:orientation="vertical"
+            android:background="@drawable/custom">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actOneDate"
+                android:text="Date: "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actOneStartTime"
+                android:text="Start time: "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actOneFinishTime"
+                android:text="Finish time: "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actOnePrice"
+                android:text="Price: "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actOneZone"
+                android:text="Zone: "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actOneCarSpot"
+                android:text="Spot: "/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/deleteActOne"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/actOne"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp">
+
+            <TextView
+                android:id="@+id/textOne"
+                android:onClick="delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:layout_marginTop="3dp"/>
+            <ImageView
+                android:id="@+id/deleteOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_indeterminate_check_box_black_24dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/actTwo"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deleteActOne"
+            android:orientation="vertical"
+            android:background="@drawable/custom">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actTwoDate"
+                android:text="Date: "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actTwoStartTime"
+                android:text="Start time: "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actTwoFinishTime"
+                android:text="Finish time: "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actTwoPrice"
+                android:text="Price: "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actTWoZone"
+                android:text="Zone: "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actTwoCarSpot"
+                android:text="Spot: "/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/actTwo"
+            android:id="@+id/deleteActTwo"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp">
+
+            <TextView
+                android:id="@+id/textTwo"
+                android:onClick="delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:layout_marginTop="3dp"/>
+            <ImageView
+                android:id="@+id/deleteTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_indeterminate_check_box_black_24dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/actThree"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deleteActTwo"
+            android:orientation="vertical"
+            android:background="@drawable/custom">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actThreeDate"
+                android:text="Date: "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actThreeStartTime"
+                android:text="Start time: "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actThreeFinishTime"
+                android:text="Finish time: "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actThreePrice"
+                android:text="Price: "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actThreeZone"
+                android:text="Zone: "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actThreeCarSpot"
+                android:text="Spot: "/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/deleteActThree"
+            android:layout_below="@+id/actThree"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp">
+
+            <TextView
+                android:id="@+id/textThree"
+                android:onClick="delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:layout_marginTop="3dp"/>
+            <ImageView
+                android:id="@+id/deleteThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_indeterminate_check_box_black_24dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/actFour"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deleteActThree"
+            android:orientation="vertical"
+            android:background="@drawable/custom">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actFourDate"
+                android:text="Date: "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actFourStartTime"
+                android:text="Start time: "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actFourFinishTime"
+                android:text="Finish time: "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actFourPrice"
+                android:text="Price: "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actFourZone"
+                android:text="Zone: "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actFourCarSpot"
+                android:text="Spot: "/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/deleteActFour"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/actFour"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp">
+
+            <TextView
+                android:onClick="delete"
+                android:id="@+id/textFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:layout_marginTop="3dp"/>
+            <ImageView
+                android:id="@+id/deleteFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_indeterminate_check_box_black_24dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/actFive"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deleteActFour"
+            android:orientation="vertical"
+            android:background="@drawable/custom">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actFiveDate"
+                android:text="Date: "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actFiveStartTime"
+                android:text="Start time: "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actFiveFinishTime"
+                android:text="Finish time: "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actFivePrice"
+                android:text="Price: "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actFiveZone"
+                android:text="Zone: "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actFiveCarSpot"
+                android:text="Spot: "/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/deleteActFive"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/actFive"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp">
+
+            <TextView
+                android:id="@+id/textFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:onClick="delete"
+                android:layout_marginTop="3dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/deleteFive"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_indeterminate_check_box_black_24dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/deleteActFive"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/deleteAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_delete_black_24dp"/>
+
+            <TextView
+                android:id="@+id/textAll"
+                android:layout_width="wrap_content"
+                android:onClick="delete"
+                android:layout_height="wrap_content"
+                android:text="Delete all"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

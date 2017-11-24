@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+        <item
+            android:id="@+id/newActivity"
+            android:icon="@mipmap/ic_add_black_24dp"
+            android:title="New activity" />
+        <item
+            android:id="@+id/openActivities"
+            android:icon="@mipmap/ic_clear_all_black_24dp"
+            android:title="Open activities" />
+        <item
+            android:id="@+id/completedActivities"
+            android:icon="@mipmap/ic_check_box_black_24dp"
+            android:title="Completed activities" />
+        <item
+            android:id="@+id/changeSettings"
+            android:icon="@mipmap/ic_settings_black_24dp"
+            android:title="Change settings" />
+    </group>
+
+
+</menu>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name"><![CDATA[Park & Go]]> </string>
+    <string name="change_settings">Change settings</string>
+    <string name="completed_activities">Completed activities</string>
+    <string name="open_activities">Open activity</string>
+    <string name="confirm_details">Confirmation</string>
+    <string name="pay">Payment</string>
+    <string name="new_activity">Choose a spot</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>
